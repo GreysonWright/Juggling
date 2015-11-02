@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainScene.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <MainSceneDelegate>
 
 @end

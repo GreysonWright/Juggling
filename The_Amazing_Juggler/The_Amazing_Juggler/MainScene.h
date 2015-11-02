@@ -9,6 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
 
+
+@protocol MainSceneDelegate <NSObject>
+
+-(void)updateTime:(int)time withCrowdMeeter:(int)satisfaction;
+
+@end
+
+
 @interface MainScene : SKScene <SKPhysicsContactDelegate>
+
+@property id<MainSceneDelegate> updateDelegate;
 
 @end

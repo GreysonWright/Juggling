@@ -11,7 +11,7 @@
 @interface MainScene () {
 	
 	SKSpriteNode *_player;
-	SKLabelNode *_timeLabel;
+	int _satisfaction;
 	int _seconds;
 	int _ballCount;
 	
@@ -31,7 +31,7 @@
 	
 	_seconds++;
 	
-	_timeLabel.text = [NSString stringWithFormat: @"%d:%02d", (_seconds / 60) % 60, _seconds % 60];
+	[self.updateDelegate updateTime: _seconds withCrowdMeeter: _satisfaction];
 	
 	if (_seconds % 5 == 0 && _ballCount < 5) {
 		
@@ -66,9 +66,6 @@
 	self.physicsBody.collisionBitMask = 1;
 	
 	_seconds = 0;
-	_timeLabel = [SKLabelNode labelNodeWithText: @"0:00"];
-	_timeLabel.position = CGPointMake(CGRectGetMaxX(self.frame) - 35, CGRectGetMaxY(self.frame) - 70);
-	[self addChild: _timeLabel];
 	
 	_player = [[SKSpriteNode alloc] initWithColor: [UIColor redColor] size: CGSizeMake(30, 30)];
 	_player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMinY(self.frame) + 120);

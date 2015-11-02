@@ -13,6 +13,7 @@
 @interface MainViewController ()
 
 @property (strong, nonatomic) IBOutlet SKView *sceneView;
+@property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 
 @end
 
@@ -33,6 +34,7 @@
 	
 	// Create and configure the scene.
 	MainScene *scene = [[MainScene alloc] initWithSize: [UIScreen mainScreen].bounds.size];
+	scene.updateDelegate = self;
 	scene.scaleMode = SKSceneScaleModeAspectFill;
 	
 	// Present the scene.
@@ -43,6 +45,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)updateTime:(int)time withCrowdMeeter:(int)satisfaction {
+	
+	self.timeLabel.text = [NSString stringWithFormat: @"%d:%02d", (time / 60) % 60, time % 60];
+	
 }
 
 @end

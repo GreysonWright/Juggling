@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9059"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="sceneView" destination="tkv-7y-eZ0" id="9gI-OV-Qdo"/>
+                <outlet property="timeLabel" destination="YEr-0E-gm1" id="LOp-al-gXg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,13 +18,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-7y-eZ0" customClass="SKView">
-                    <rect key="frame" x="0.0" y="22" width="600" height="578"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEr-0E-gm1">
+                            <rect key="frame" x="538" y="8" width="54" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YEr-0E-gm1" secondAttribute="trailing" constant="8" id="GvX-8p-zby"/>
+                        <constraint firstItem="YEr-0E-gm1" firstAttribute="top" secondItem="tkv-7y-eZ0" secondAttribute="top" constant="8" id="hU7-W1-VGq"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="tkv-7y-eZ0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="A3c-Pk-lYE"/>
+                <constraint firstItem="tkv-7y-eZ0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A3c-Pk-lYE"/>
                 <constraint firstAttribute="trailing" secondItem="tkv-7y-eZ0" secondAttribute="trailing" id="KJa-1C-76R"/>
                 <constraint firstAttribute="bottom" secondItem="tkv-7y-eZ0" secondAttribute="bottom" id="qPr-iv-EXP"/>
                 <constraint firstItem="tkv-7y-eZ0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xlx-Cj-4I7"/>
