@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="crowdStatusImageView" destination="cu1-zP-J5W" id="gRn-nB-Xz1"/>
                 <outlet property="sceneView" destination="tkv-7y-eZ0" id="9gI-OV-Qdo"/>
                 <outlet property="timeLabel" destination="YEr-0E-gm1" id="LOp-al-gXg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -26,10 +27,20 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cu1-zP-J5W">
+                            <rect key="frame" x="500" y="8" width="30" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="LFk-6F-803"/>
+                                <constraint firstAttribute="width" constant="30" id="Uw2-ja-V6M"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="YEr-0E-gm1" firstAttribute="leading" secondItem="cu1-zP-J5W" secondAttribute="trailing" constant="8" id="4it-w3-y8n"/>
                         <constraint firstAttribute="trailing" secondItem="YEr-0E-gm1" secondAttribute="trailing" constant="8" id="GvX-8p-zby"/>
+                        <constraint firstItem="cu1-zP-J5W" firstAttribute="top" secondItem="tkv-7y-eZ0" secondAttribute="top" constant="8" id="KuJ-bi-0rB"/>
                         <constraint firstItem="YEr-0E-gm1" firstAttribute="top" secondItem="tkv-7y-eZ0" secondAttribute="top" constant="8" id="hU7-W1-VGq"/>
                     </constraints>
                 </view>

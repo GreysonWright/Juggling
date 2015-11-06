@@ -13,6 +13,7 @@
 @protocol MainSceneDelegate <NSObject>
 
 -(void)updateTime:(int)time withCrowdMeeter:(int)satisfaction;
+-(void)gameEnded;
 
 @end
 

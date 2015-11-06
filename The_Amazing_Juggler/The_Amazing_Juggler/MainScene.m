@@ -10,6 +10,7 @@
 
 @interface MainScene () {
 	
+	NSTimer *_gameTimer;
 	SKSpriteNode *_player;
 	int _satisfaction;
 	int _seconds;
@@ -30,12 +31,19 @@
 -(void)gameTimeUpdate {
 	
 	_seconds++;
+	_satisfaction = MIN(_satisfaction + 1, 100);
 	
 	[self.updateDelegate updateTime: _seconds withCrowdMeeter: _satisfaction];
 	
-	if (_seconds % 5 == 0 && _ballCount < 5) {
+	if (_seconds % 5 == 0) {
 		
-		[self createBall];
+		_satisfaction = MIN(_satisfaction + 8, 100);
+		
+		if (_ballCount < 7) {
+			
+			[self createBall];
+			
+		}
 		
 	}
 	
@@ -57,7 +65,7 @@
 	
 }
 
--(void)didMoveToView:(SKView *)view {
+-(void)startGame {
 	
 	self.physicsWorld.gravity = CGVectorMake(0, -3);
 	self.physicsWorld.contactDelegate = self;
@@ -66,6 +74,7 @@
 	self.physicsBody.collisionBitMask = 1;
 	
 	_seconds = 0;
+	_satisfaction = 30;
 	
 	_player = [[SKSpriteNode alloc] initWithColor: [UIColor redColor] size: CGSizeMake(30, 30)];
 	_player.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMinY(self.frame) + 120);
@@ -78,8 +87,21 @@
 	
 	[self createBall];
 	
-	[NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(gameTimeUpdate) userInfo: nil repeats:YES];
+	_gameTimer = [NSTimer scheduledTimerWithTimeInterval: 1 target: self selector: @selector(gameTimeUpdate) userInfo: nil repeats:YES];
 	
+}
+
+-(void)endGame {
+	
+	self.paused = YES;
+	[_gameTimer invalidate];
+	[self.updateDelegate gameEnded];
+	
+}
+
+-(void)didMoveToView:(SKView *)view {
+	
+	[self startGame];
 }
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -96,7 +118,7 @@
 	
 	if (contact.bodyA.contactTestBitMask == 3) {
 		
-		contact.bodyB.velocity = CGVectorMake(contact.bodyB.velocity.dx * -0.5, contact.bodyB.velocity.dy);
+		contact.bodyB.velocity = CGVectorMake(contact.bodyB.velocity.dx * -0.8, contact.bodyB.velocity.dy);
 		
 	} else if (contact.bodyA.contactTestBitMask == 2) {
 
@@ -109,6 +131,19 @@
 		
 		[contact.bodyB.node removeFromParent];
 		_ballCount--;
+		_satisfaction = MAX(_satisfaction - 30, 0);
+		[self.updateDelegate updateTime: _seconds withCrowdMeeter: _satisfaction];
+		
+	}
+	
+}
+
+-(void)update:(NSTimeInterval)currentTime {
+	[super update: currentTime];
+	
+	if (_satisfaction == 0) {
+	
+		[self endGame];
 		
 	}
 	

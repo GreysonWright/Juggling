@@ -8,12 +8,19 @@
 
 #import "MainViewController.h"
 #import "MainScene.h"
+#import "AppDelegate.h"
+#import "MenuViewController.h"
 #import <iAd/iAd.h>
 
-@interface MainViewController ()
+@interface MainViewController () {
+	
+	MainScene *_scene;
+	
+}
 
 @property (strong, nonatomic) IBOutlet SKView *sceneView;
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *crowdStatusImageView;
 
 @end
 
@@ -33,12 +40,12 @@
 	skView.multipleTouchEnabled = YES;
 	
 	// Create and configure the scene.
-	MainScene *scene = [[MainScene alloc] initWithSize: [UIScreen mainScreen].bounds.size];
-	scene.updateDelegate = self;
-	scene.scaleMode = SKSceneScaleModeAspectFill;
+	_scene = [[MainScene alloc] initWithSize: [UIScreen mainScreen].bounds.size];
+	_scene.updateDelegate = self;
+	_scene.scaleMode = SKSceneScaleModeAspectFill;
 	
 	// Present the scene.
-	[skView presentScene:scene];
+	[skView presentScene:_scene];
 	
 }
 
@@ -50,6 +57,30 @@
 -(void)updateTime:(int)time withCrowdMeeter:(int)satisfaction {
 	
 	self.timeLabel.text = [NSString stringWithFormat: @"%d:%02d", (time / 60) % 60, time % 60];
+	
+	if (satisfaction < 25) {
+		
+		self.crowdStatusImageView.backgroundColor = [UIColor redColor];
+		
+	} else if (satisfaction < 50) {
+		
+		self.crowdStatusImageView.backgroundColor = [UIColor orangeColor];
+		
+	} else if (satisfaction < 75) {
+		
+		self.crowdStatusImageView.backgroundColor = [UIColor yellowColor];
+		
+	} else if (satisfaction > 75) {
+		
+		self.crowdStatusImageView.backgroundColor = [UIColor greenColor];
+		
+	}
+	
+}
+
+-(void)gameEnded {
+	
+	((AppDelegate *)[UIApplication sharedApplication].delegate).window.rootViewController = [[MenuViewController alloc] init];
 	
 }
 

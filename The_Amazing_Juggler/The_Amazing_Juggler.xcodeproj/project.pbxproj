@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E965E9C1BEBE92900740665 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E965E9A1BEBE92900740665 /* MenuViewController.m */; };
+		2E965E9D1BEBE92900740665 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E965E9B1BEBE92900740665 /* MenuViewController.xib */; };
 		2EC8B05C1BDEBFF700BF4AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B05B1BDEBFF700BF4AC5 /* main.m */; };
 		2EC8B05F1BDEBFF700BF4AC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B05E1BDEBFF700BF4AC5 /* AppDelegate.m */; };
 		2EC8B0671BDEBFF700BF4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8B0661BDEBFF700BF4AC5 /* Assets.xcassets */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E965E991BEBE92900740665 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		2E965E9A1BEBE92900740665 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		2E965E9B1BEBE92900740665 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		2EC8B0571BDEBFF700BF4AC5 /* The_Amazing_Juggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = The_Amazing_Juggler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC8B05B1BDEBFF700BF4AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EC8B05D1BDEBFF700BF4AC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +119,9 @@
 			children = (
 				2EC8B05D1BDEBFF700BF4AC5 /* AppDelegate.h */,
 				2EC8B05E1BDEBFF700BF4AC5 /* AppDelegate.m */,
+				2E965E991BEBE92900740665 /* MenuViewController.h */,
+				2E965E9A1BEBE92900740665 /* MenuViewController.m */,
+				2E965E9B1BEBE92900740665 /* MenuViewController.xib */,
 				2EC8B0E01BDEC4E100BF4AC5 /* MainViewController.h */,
 				2EC8B0E11BDEC4E100BF4AC5 /* MainViewController.m */,
 				2EC8B0E21BDEC4E100BF4AC5 /* MainViewController.xib */,
@@ -259,6 +267,7 @@
 				2EC8B06A1BDEBFF700BF4AC5 /* LaunchScreen.storyboard in Resources */,
 				2EC8B0671BDEBFF700BF4AC5 /* Assets.xcassets in Resources */,
 				2EC8B0E41BDEC4E100BF4AC5 /* MainViewController.xib in Resources */,
+				2E965E9D1BEBE92900740665 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +296,7 @@
 				2EC8B0E91BDEC53800BF4AC5 /* MainScene.m in Sources */,
 				2EC8B0E31BDEC4E100BF4AC5 /* MainViewController.m in Sources */,
 				2EC8B05C1BDEBFF700BF4AC5 /* main.m in Sources */,
+				2E965E9C1BEBE92900740665 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
