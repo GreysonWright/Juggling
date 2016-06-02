@@ -55,20 +55,21 @@ extension GameScene {
 				self?.createBall()
 				self?.crowdSatisfaction = min(self!.crowdSatisfaction + 8, 100);
 			}
+			self?.score += 3
+			self?.scoreLabel?.text = "Score: \(self!.score)"
 		}
 		satisfactionTimer =  1.second.interval { [weak self] in
 			self?.crowdSatisfaction = min(self!.crowdSatisfaction + 1, 100);
-			
-//			self?.updateDelegate updateTime: _seconds withCrowdMeeter: _satisfaction];
+			self?.gameDelegate?.updateCrowdSatisfaction(self!.crowdSatisfaction)
 		}
 	}
 	
-	func createPointsLabel() {
+	func createScoreLabel() {
 		let scoreLabelNode = SKLabelNode(text: "Score: 0")
 		scoreLabelNode.fontColor = UIColor.whiteColor()
 		scoreLabelNode.fontSize = 20
 		scoreLabelNode.fontName = "Helvetica Neue"
-		scoreLabelNode.position = CGPoint(x: CGRectGetMinX(frame) + scoreLabelNode.frame.width / 2 + 15, y: CGRectGetMaxY(frame) - 28)
+		scoreLabelNode.position = CGPoint(x: CGRectGetMinX(frame) + scoreLabelNode.frame.width / 2 + 7, y: CGRectGetMaxY(frame) - 28)
 		
 		scoreLabel = scoreLabelNode
 		addChild(scoreLabel!)
@@ -80,7 +81,7 @@ extension GameScene {
 		physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
 		physicsBody!.contactTestBitMask = 4;
 		physicsBody!.collisionBitMask = 1;
-		createPointsLabel()
+		createScoreLabel()
 		createGround()
 		createPlayer()
 		setupTimer()

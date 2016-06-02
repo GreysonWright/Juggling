@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="The_Amazing_Juggler" customModuleProvider="target">
             <connections>
+                <outlet property="crowdStatusImageView" destination="dje-je-z7p" id="dPx-i1-8dq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,21 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="SKView">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dje-je-z7p">
+                    <rect key="frame" x="562" y="8" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Gib-yF-3My"/>
+                        <constraint firstAttribute="height" constant="30" id="rsQ-8b-kDv"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dje-je-z7p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="4N6-wI-L3o"/>
+                <constraint firstAttribute="trailing" secondItem="dje-je-z7p" secondAttribute="trailing" constant="8" id="WaU-N8-Csa"/>
+            </constraints>
         </view>
     </objects>
 </document>

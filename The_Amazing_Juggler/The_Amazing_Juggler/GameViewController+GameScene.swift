@@ -37,6 +37,14 @@ extension GameViewController {
 	}
 	
 	func updateCrowdSatisfaction(value: Int) {
-		
+		if value < 25 {
+			crowdStatusImageView.backgroundColor = UIColor.redColor()
+		} else if value < 50 {
+			self.crowdStatusImageView.backgroundColor = UIColor.orangeColor()
+		} else if value < 75 {
+			self.crowdStatusImageView.backgroundColor = UIColor.yellowColor()
+		} else if value > 75 {
+			self.crowdStatusImageView.backgroundColor = UIColor.greenColor()
+		}
 	}
 }

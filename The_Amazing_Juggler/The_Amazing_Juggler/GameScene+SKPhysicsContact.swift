@@ -15,7 +15,7 @@ extension GameScene {
 		} else if (contact.bodyA.contactTestBitMask == 1) {
 			contact.bodyB.applyImpulse(CGVectorMake(0.1 * randomNumber(-1.0, upperBound: 1.0), 3.5))
 			contact.bodyB.velocity = CGVector(dx: contact.bodyB.velocity.dx, dy: min(contact.bodyB.velocity.dy, 600));
-			score += 10 * crowdSatisfaction
+			score += 1
 			scoreLabel?.text = "Score \(score)"
 		}
 		

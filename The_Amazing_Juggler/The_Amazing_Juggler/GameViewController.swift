@@ -10,6 +10,8 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController, GameSceneDelegate {
+	@IBOutlet weak var crowdStatusImageView: UIImageView!
+	
 	weak var gameScene: GameScene?
 	weak var gameView: SKView?
 	
