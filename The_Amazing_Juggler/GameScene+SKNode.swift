@@ -55,8 +55,10 @@ extension GameScene {
 				self?.createBall()
 				self?.crowdSatisfaction = min(self!.crowdSatisfaction + 8, 100);
 			}
-			self?.score += 3
-			self?.scoreLabel?.text = "Score: \(self!.score)"
+			if self?.score != 0 {
+				self?.score += 3
+				self?.scoreLabel?.text = "Score: \(self!.score)"
+			}
 		}
 		satisfactionTimer =  1.second.interval { [weak self] in
 			self?.crowdSatisfaction = min(self!.crowdSatisfaction + 1, 100);

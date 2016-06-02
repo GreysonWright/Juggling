@@ -15,8 +15,11 @@ extension GameScene {
 		} else if (contact.bodyA.contactTestBitMask == 1) {
 			contact.bodyB.applyImpulse(CGVectorMake(0.1 * randomNumber(-1.0, upperBound: 1.0), 3.5))
 			contact.bodyB.velocity = CGVector(dx: contact.bodyB.velocity.dx, dy: min(contact.bodyB.velocity.dy, 600));
-			score += 1
-			scoreLabel?.text = "Score \(score)"
+			if !ignoreContact {
+				score += 1
+				scoreLabel?.text = "Score \(score)"
+			}
+			ignoreContact = false
 		}
 		
 		if contact.contactPoint.y < CGRectGetMinY(frame) + 20 {
