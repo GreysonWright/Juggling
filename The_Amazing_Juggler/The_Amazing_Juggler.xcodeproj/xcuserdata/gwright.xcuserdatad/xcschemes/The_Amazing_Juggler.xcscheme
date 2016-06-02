@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EC8B0561BDEBFF700BF4AC5"
+               BlueprintIdentifier = "2EA436961D00BBE1007EEFB1"
                BuildableName = "The_Amazing_Juggler.app"
                BlueprintName = "The_Amazing_Juggler"
                ReferencedContainer = "container:The_Amazing_Juggler.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EC8B06F1BDEBFF800BF4AC5"
+               BlueprintIdentifier = "2EA436AA1D00BBE1007EEFB1"
                BuildableName = "The_Amazing_JugglerTests.xctest"
                BlueprintName = "The_Amazing_JugglerTests"
                ReferencedContainer = "container:The_Amazing_Juggler.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EC8B07A1BDEBFF800BF4AC5"
+               BlueprintIdentifier = "2EA436B51D00BBE1007EEFB1"
                BuildableName = "The_Amazing_JugglerUITests.xctest"
                BlueprintName = "The_Amazing_JugglerUITests"
                ReferencedContainer = "container:The_Amazing_Juggler.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2EC8B0561BDEBFF700BF4AC5"
+            BlueprintIdentifier = "2EA436961D00BBE1007EEFB1"
             BuildableName = "The_Amazing_Juggler.app"
             BlueprintName = "The_Amazing_Juggler"
             ReferencedContainer = "container:The_Amazing_Juggler.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2EC8B0561BDEBFF700BF4AC5"
+            BlueprintIdentifier = "2EA436961D00BBE1007EEFB1"
             BuildableName = "The_Amazing_Juggler.app"
             BlueprintName = "The_Amazing_Juggler"
             ReferencedContainer = "container:The_Amazing_Juggler.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2EC8B0561BDEBFF700BF4AC5"
+            BlueprintIdentifier = "2EA436961D00BBE1007EEFB1"
             BuildableName = "The_Amazing_Juggler.app"
             BlueprintName = "The_Amazing_Juggler"
             ReferencedContainer = "container:The_Amazing_Juggler.xcodeproj">

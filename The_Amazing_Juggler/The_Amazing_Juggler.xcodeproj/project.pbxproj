@@ -7,77 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EC8B05C1BDEBFF700BF4AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B05B1BDEBFF700BF4AC5 /* main.m */; };
-		2EC8B05F1BDEBFF700BF4AC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B05E1BDEBFF700BF4AC5 /* AppDelegate.m */; };
-		2EC8B0671BDEBFF700BF4AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8B0661BDEBFF700BF4AC5 /* Assets.xcassets */; };
-		2EC8B06A1BDEBFF700BF4AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8B0681BDEBFF700BF4AC5 /* LaunchScreen.storyboard */; };
-		2EC8B0751BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B0741BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.m */; };
-		2EC8B0801BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B07F1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.m */; };
-		2EC8B0E31BDEC4E100BF4AC5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B0E11BDEC4E100BF4AC5 /* MainViewController.m */; };
-		2EC8B0E41BDEC4E100BF4AC5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8B0E21BDEC4E100BF4AC5 /* MainViewController.xib */; };
-		2EC8B0E61BDEC51D00BF4AC5 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC8B0E51BDEC51D00BF4AC5 /* SpriteKit.framework */; };
-		2EC8B0E91BDEC53800BF4AC5 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8B0E81BDEC53800BF4AC5 /* MainScene.m */; };
-		2EC8B0EB1BDED27200BF4AC5 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC8B0EA1BDED27200BF4AC5 /* iAd.framework */; };
+		2EA4369B1D00BBE1007EEFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4369A1D00BBE1007EEFB1 /* AppDelegate.swift */; };
+		2EA436A21D00BBE1007EEFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA436A11D00BBE1007EEFB1 /* Assets.xcassets */; };
+		2EA436A51D00BBE1007EEFB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA436A31D00BBE1007EEFB1 /* LaunchScreen.storyboard */; };
+		2EA436B01D00BBE1007EEFB1 /* The_Amazing_JugglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436AF1D00BBE1007EEFB1 /* The_Amazing_JugglerTests.swift */; };
+		2EA436BB1D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436BA1D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.swift */; };
+		2EA436CA1D00BC40007EEFB1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436C81D00BC40007EEFB1 /* MenuViewController.swift */; };
+		2EA436CB1D00BC40007EEFB1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA436C91D00BC40007EEFB1 /* MenuViewController.xib */; };
+		2EA436D01D00BC59007EEFB1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436CE1D00BC59007EEFB1 /* GameViewController.swift */; };
+		2EA436D11D00BC59007EEFB1 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA436CF1D00BC59007EEFB1 /* GameViewController.xib */; };
+		2EA436D41D00BC8D007EEFB1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436D31D00BC8D007EEFB1 /* GameScene.swift */; };
+		2EA436D81D00BD14007EEFB1 /* MenuViewController+UITouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436D71D00BD14007EEFB1 /* MenuViewController+UITouch.swift */; };
+		2EA436DA1D00BDD6007EEFB1 /* GameViewController+SKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436D91D00BDD6007EEFB1 /* GameViewController+SKScene.swift */; };
+		2EA436DC1D00BFF7007EEFB1 /* GameScene+SKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436DB1D00BFF7007EEFB1 /* GameScene+SKNode.swift */; };
+		2EA436DE1D00C056007EEFB1 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436DD1D00C056007EEFB1 /* PlayerNode.swift */; };
+		2EA436E01D00C4A7007EEFB1 /* GameScene+UITouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436DF1D00C4A7007EEFB1 /* GameScene+UITouch.swift */; };
+		2EA436E31D00C77B007EEFB1 /* EasyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436E11D00C77B007EEFB1 /* EasyTimer.swift */; };
+		2EA436E41D00C77B007EEFB1 /* EasyTimerTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436E21D00C77B007EEFB1 /* EasyTimerTimeInterval.swift */; };
+		2EA436E81D00CBD8007EEFB1 /* GameScene+SKPhysicsContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436E71D00CBD8007EEFB1 /* GameScene+SKPhysicsContact.swift */; };
+		2EA436EA1D00D3F4007EEFB1 /* GameViewController+GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA436E91D00D3F4007EEFB1 /* GameViewController+GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2EC8B0711BDEBFF800BF4AC5 /* PBXContainerItemProxy */ = {
+		2EA436AC1D00BBE1007EEFB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2EC8B04F1BDEBFF700BF4AC5 /* Project object */;
+			containerPortal = 2EA4368F1D00BBE1007EEFB1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2EC8B0561BDEBFF700BF4AC5;
+			remoteGlobalIDString = 2EA436961D00BBE1007EEFB1;
 			remoteInfo = The_Amazing_Juggler;
 		};
-		2EC8B07C1BDEBFF800BF4AC5 /* PBXContainerItemProxy */ = {
+		2EA436B71D00BBE1007EEFB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2EC8B04F1BDEBFF700BF4AC5 /* Project object */;
+			containerPortal = 2EA4368F1D00BBE1007EEFB1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2EC8B0561BDEBFF700BF4AC5;
+			remoteGlobalIDString = 2EA436961D00BBE1007EEFB1;
 			remoteInfo = The_Amazing_Juggler;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2EC8B0571BDEBFF700BF4AC5 /* The_Amazing_Juggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = The_Amazing_Juggler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EC8B05B1BDEBFF700BF4AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EC8B05D1BDEBFF700BF4AC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2EC8B05E1BDEBFF700BF4AC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2EC8B0661BDEBFF700BF4AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2EC8B0691BDEBFF700BF4AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2EC8B06B1BDEBFF700BF4AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EC8B0701BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = The_Amazing_JugglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EC8B0741BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Amazing_JugglerTests.m; sourceTree = "<group>"; };
-		2EC8B0761BDEBFF800BF4AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EC8B07B1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = The_Amazing_JugglerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EC8B07F1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Amazing_JugglerUITests.m; sourceTree = "<group>"; };
-		2EC8B0811BDEBFF800BF4AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EC8B0E01BDEC4E100BF4AC5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		2EC8B0E11BDEC4E100BF4AC5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		2EC8B0E21BDEC4E100BF4AC5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		2EC8B0E51BDEC51D00BF4AC5 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		2EC8B0E71BDEC53800BF4AC5 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
-		2EC8B0E81BDEC53800BF4AC5 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
-		2EC8B0EA1BDED27200BF4AC5 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		2EA436971D00BBE1007EEFB1 /* The_Amazing_Juggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = The_Amazing_Juggler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA4369A1D00BBE1007EEFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EA436A11D00BBE1007EEFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EA436A41D00BBE1007EEFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EA436A61D00BBE1007EEFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA436AB1D00BBE1007EEFB1 /* The_Amazing_JugglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = The_Amazing_JugglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA436AF1D00BBE1007EEFB1 /* The_Amazing_JugglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Amazing_JugglerTests.swift; sourceTree = "<group>"; };
+		2EA436B11D00BBE1007EEFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA436B61D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = The_Amazing_JugglerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA436BA1D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Amazing_JugglerUITests.swift; sourceTree = "<group>"; };
+		2EA436BC1D00BBE1007EEFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA436C81D00BC40007EEFB1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2EA436C91D00BC40007EEFB1 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		2EA436CE1D00BC59007EEFB1 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2EA436CF1D00BC59007EEFB1 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		2EA436D31D00BC8D007EEFB1 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2EA436D71D00BD14007EEFB1 /* MenuViewController+UITouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuViewController+UITouch.swift"; sourceTree = "<group>"; };
+		2EA436D91D00BDD6007EEFB1 /* GameViewController+SKScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+SKScene.swift"; sourceTree = "<group>"; };
+		2EA436DB1D00BFF7007EEFB1 /* GameScene+SKNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+SKNode.swift"; sourceTree = "<group>"; };
+		2EA436DD1D00C056007EEFB1 /* PlayerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		2EA436DF1D00C4A7007EEFB1 /* GameScene+UITouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+UITouch.swift"; sourceTree = "<group>"; };
+		2EA436E11D00C77B007EEFB1 /* EasyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTimer.swift; sourceTree = "<group>"; };
+		2EA436E21D00C77B007EEFB1 /* EasyTimerTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTimerTimeInterval.swift; sourceTree = "<group>"; };
+		2EA436E71D00CBD8007EEFB1 /* GameScene+SKPhysicsContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+SKPhysicsContact.swift"; sourceTree = "<group>"; };
+		2EA436E91D00D3F4007EEFB1 /* GameViewController+GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameViewController+GameScene.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2EC8B0541BDEBFF700BF4AC5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EC8B0EB1BDED27200BF4AC5 /* iAd.framework in Frameworks */,
-				2EC8B0E61BDEC51D00BF4AC5 /* SpriteKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2EC8B06D1BDEBFF800BF4AC5 /* Frameworks */ = {
+		2EA436941D00BBE1007EEFB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EC8B0781BDEBFF800BF4AC5 /* Frameworks */ = {
+		2EA436A81D00BBE1007EEFB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA436B31D00BBE1007EEFB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,82 +98,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EC8B04E1BDEBFF700BF4AC5 = {
+		2EA4368E1D00BBE1007EEFB1 = {
 			isa = PBXGroup;
 			children = (
-				2EC8B0EA1BDED27200BF4AC5 /* iAd.framework */,
-				2EC8B0E51BDEC51D00BF4AC5 /* SpriteKit.framework */,
-				2EC8B0591BDEBFF700BF4AC5 /* The_Amazing_Juggler */,
-				2EC8B0731BDEBFF800BF4AC5 /* The_Amazing_JugglerTests */,
-				2EC8B07E1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests */,
-				2EC8B0581BDEBFF700BF4AC5 /* Products */,
+				2EA436991D00BBE1007EEFB1 /* The_Amazing_Juggler */,
+				2EA436AE1D00BBE1007EEFB1 /* The_Amazing_JugglerTests */,
+				2EA436B91D00BBE1007EEFB1 /* The_Amazing_JugglerUITests */,
+				2EA436981D00BBE1007EEFB1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2EC8B0581BDEBFF700BF4AC5 /* Products */ = {
+		2EA436981D00BBE1007EEFB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EC8B0571BDEBFF700BF4AC5 /* The_Amazing_Juggler.app */,
-				2EC8B0701BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.xctest */,
-				2EC8B07B1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.xctest */,
+				2EA436971D00BBE1007EEFB1 /* The_Amazing_Juggler.app */,
+				2EA436AB1D00BBE1007EEFB1 /* The_Amazing_JugglerTests.xctest */,
+				2EA436B61D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2EC8B0591BDEBFF700BF4AC5 /* The_Amazing_Juggler */ = {
+		2EA436991D00BBE1007EEFB1 /* The_Amazing_Juggler */ = {
 			isa = PBXGroup;
 			children = (
-				2EC8B05D1BDEBFF700BF4AC5 /* AppDelegate.h */,
-				2EC8B05E1BDEBFF700BF4AC5 /* AppDelegate.m */,
-				2EC8B0E01BDEC4E100BF4AC5 /* MainViewController.h */,
-				2EC8B0E11BDEC4E100BF4AC5 /* MainViewController.m */,
-				2EC8B0E21BDEC4E100BF4AC5 /* MainViewController.xib */,
-				2EC8B0E71BDEC53800BF4AC5 /* MainScene.h */,
-				2EC8B0E81BDEC53800BF4AC5 /* MainScene.m */,
-				2EC8B0661BDEBFF700BF4AC5 /* Assets.xcassets */,
-				2EC8B0681BDEBFF700BF4AC5 /* LaunchScreen.storyboard */,
-				2EC8B06B1BDEBFF700BF4AC5 /* Info.plist */,
-				2EC8B05A1BDEBFF700BF4AC5 /* Supporting Files */,
+				2EA4369A1D00BBE1007EEFB1 /* AppDelegate.swift */,
+				2EA436E61D00C785007EEFB1 /* Libs */,
+				2EA436CD1D00BC4B007EEFB1 /* Controllers */,
+				2EA436D51D00BC9A007EEFB1 /* Game */,
+				2EA436A11D00BBE1007EEFB1 /* Assets.xcassets */,
+				2EA436A31D00BBE1007EEFB1 /* LaunchScreen.storyboard */,
+				2EA436A61D00BBE1007EEFB1 /* Info.plist */,
 			);
 			path = The_Amazing_Juggler;
 			sourceTree = "<group>";
 		};
-		2EC8B05A1BDEBFF700BF4AC5 /* Supporting Files */ = {
+		2EA436AE1D00BBE1007EEFB1 /* The_Amazing_JugglerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2EC8B05B1BDEBFF700BF4AC5 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2EC8B0731BDEBFF800BF4AC5 /* The_Amazing_JugglerTests */ = {
-			isa = PBXGroup;
-			children = (
-				2EC8B0741BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.m */,
-				2EC8B0761BDEBFF800BF4AC5 /* Info.plist */,
+				2EA436AF1D00BBE1007EEFB1 /* The_Amazing_JugglerTests.swift */,
+				2EA436B11D00BBE1007EEFB1 /* Info.plist */,
 			);
 			path = The_Amazing_JugglerTests;
 			sourceTree = "<group>";
 		};
-		2EC8B07E1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests */ = {
+		2EA436B91D00BBE1007EEFB1 /* The_Amazing_JugglerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2EC8B07F1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.m */,
-				2EC8B0811BDEBFF800BF4AC5 /* Info.plist */,
+				2EA436BA1D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.swift */,
+				2EA436BC1D00BBE1007EEFB1 /* Info.plist */,
 			);
 			path = The_Amazing_JugglerUITests;
+			sourceTree = "<group>";
+		};
+		2EA436CC1D00BC43007EEFB1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2EA436C81D00BC40007EEFB1 /* MenuViewController.swift */,
+				2EA436D71D00BD14007EEFB1 /* MenuViewController+UITouch.swift */,
+				2EA436C91D00BC40007EEFB1 /* MenuViewController.xib */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		2EA436CD1D00BC4B007EEFB1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EA436CC1D00BC43007EEFB1 /* Menu */,
+				2EA436D21D00BC5D007EEFB1 /* Game */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2EA436D21D00BC5D007EEFB1 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2EA436CE1D00BC59007EEFB1 /* GameViewController.swift */,
+				2EA436D91D00BDD6007EEFB1 /* GameViewController+SKScene.swift */,
+				2EA436E91D00D3F4007EEFB1 /* GameViewController+GameScene.swift */,
+				2EA436CF1D00BC59007EEFB1 /* GameViewController.xib */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		2EA436D51D00BC9A007EEFB1 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2EA436DD1D00C056007EEFB1 /* PlayerNode.swift */,
+				2EA436D61D00BCA5007EEFB1 /* Scenes */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		2EA436D61D00BCA5007EEFB1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2EA436D31D00BC8D007EEFB1 /* GameScene.swift */,
+				2EA436DB1D00BFF7007EEFB1 /* GameScene+SKNode.swift */,
+				2EA436DF1D00C4A7007EEFB1 /* GameScene+UITouch.swift */,
+				2EA436E71D00CBD8007EEFB1 /* GameScene+SKPhysicsContact.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		2EA436E51D00C77F007EEFB1 /* Easy Timer */ = {
+			isa = PBXGroup;
+			children = (
+				2EA436E11D00C77B007EEFB1 /* EasyTimer.swift */,
+				2EA436E21D00C77B007EEFB1 /* EasyTimerTimeInterval.swift */,
+			);
+			name = "Easy Timer";
+			sourceTree = "<group>";
+		};
+		2EA436E61D00C785007EEFB1 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				2EA436E51D00C77F007EEFB1 /* Easy Timer */,
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2EC8B0561BDEBFF700BF4AC5 /* The_Amazing_Juggler */ = {
+		2EA436961D00BBE1007EEFB1 /* The_Amazing_Juggler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EC8B0841BDEBFF800BF4AC5 /* Build configuration list for PBXNativeTarget "The_Amazing_Juggler" */;
+			buildConfigurationList = 2EA436BF1D00BBE1007EEFB1 /* Build configuration list for PBXNativeTarget "The_Amazing_Juggler" */;
 			buildPhases = (
-				2EC8B0531BDEBFF700BF4AC5 /* Sources */,
-				2EC8B0541BDEBFF700BF4AC5 /* Frameworks */,
-				2EC8B0551BDEBFF700BF4AC5 /* Resources */,
+				2EA436931D00BBE1007EEFB1 /* Sources */,
+				2EA436941D00BBE1007EEFB1 /* Frameworks */,
+				2EA436951D00BBE1007EEFB1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -170,68 +234,69 @@
 			);
 			name = The_Amazing_Juggler;
 			productName = The_Amazing_Juggler;
-			productReference = 2EC8B0571BDEBFF700BF4AC5 /* The_Amazing_Juggler.app */;
+			productReference = 2EA436971D00BBE1007EEFB1 /* The_Amazing_Juggler.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2EC8B06F1BDEBFF800BF4AC5 /* The_Amazing_JugglerTests */ = {
+		2EA436AA1D00BBE1007EEFB1 /* The_Amazing_JugglerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EC8B0871BDEBFF800BF4AC5 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerTests" */;
+			buildConfigurationList = 2EA436C21D00BBE1007EEFB1 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerTests" */;
 			buildPhases = (
-				2EC8B06C1BDEBFF800BF4AC5 /* Sources */,
-				2EC8B06D1BDEBFF800BF4AC5 /* Frameworks */,
-				2EC8B06E1BDEBFF800BF4AC5 /* Resources */,
+				2EA436A71D00BBE1007EEFB1 /* Sources */,
+				2EA436A81D00BBE1007EEFB1 /* Frameworks */,
+				2EA436A91D00BBE1007EEFB1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2EC8B0721BDEBFF800BF4AC5 /* PBXTargetDependency */,
+				2EA436AD1D00BBE1007EEFB1 /* PBXTargetDependency */,
 			);
 			name = The_Amazing_JugglerTests;
 			productName = The_Amazing_JugglerTests;
-			productReference = 2EC8B0701BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.xctest */;
+			productReference = 2EA436AB1D00BBE1007EEFB1 /* The_Amazing_JugglerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2EC8B07A1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests */ = {
+		2EA436B51D00BBE1007EEFB1 /* The_Amazing_JugglerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EC8B08A1BDEBFF800BF4AC5 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerUITests" */;
+			buildConfigurationList = 2EA436C51D00BBE1007EEFB1 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerUITests" */;
 			buildPhases = (
-				2EC8B0771BDEBFF800BF4AC5 /* Sources */,
-				2EC8B0781BDEBFF800BF4AC5 /* Frameworks */,
-				2EC8B0791BDEBFF800BF4AC5 /* Resources */,
+				2EA436B21D00BBE1007EEFB1 /* Sources */,
+				2EA436B31D00BBE1007EEFB1 /* Frameworks */,
+				2EA436B41D00BBE1007EEFB1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2EC8B07D1BDEBFF800BF4AC5 /* PBXTargetDependency */,
+				2EA436B81D00BBE1007EEFB1 /* PBXTargetDependency */,
 			);
 			name = The_Amazing_JugglerUITests;
 			productName = The_Amazing_JugglerUITests;
-			productReference = 2EC8B07B1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.xctest */;
+			productReference = 2EA436B61D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2EC8B04F1BDEBFF700BF4AC5 /* Project object */ = {
+		2EA4368F1D00BBE1007EEFB1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Greyson Wright";
 				TargetAttributes = {
-					2EC8B0561BDEBFF700BF4AC5 = {
-						CreatedOnToolsVersion = 7.1;
+					2EA436961D00BBE1007EEFB1 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
-					2EC8B06F1BDEBFF800BF4AC5 = {
-						CreatedOnToolsVersion = 7.1;
-						TestTargetID = 2EC8B0561BDEBFF700BF4AC5;
+					2EA436AA1D00BBE1007EEFB1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2EA436961D00BBE1007EEFB1;
 					};
-					2EC8B07A1BDEBFF800BF4AC5 = {
-						CreatedOnToolsVersion = 7.1;
-						TestTargetID = 2EC8B0561BDEBFF700BF4AC5;
+					2EA436B51D00BBE1007EEFB1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2EA436961D00BBE1007EEFB1;
 					};
 				};
 			};
-			buildConfigurationList = 2EC8B0521BDEBFF700BF4AC5 /* Build configuration list for PBXProject "The_Amazing_Juggler" */;
+			buildConfigurationList = 2EA436921D00BBE1007EEFB1 /* Build configuration list for PBXProject "The_Amazing_Juggler" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,37 +304,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 2EC8B04E1BDEBFF700BF4AC5;
-			productRefGroup = 2EC8B0581BDEBFF700BF4AC5 /* Products */;
+			mainGroup = 2EA4368E1D00BBE1007EEFB1;
+			productRefGroup = 2EA436981D00BBE1007EEFB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2EC8B0561BDEBFF700BF4AC5 /* The_Amazing_Juggler */,
-				2EC8B06F1BDEBFF800BF4AC5 /* The_Amazing_JugglerTests */,
-				2EC8B07A1BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests */,
+				2EA436961D00BBE1007EEFB1 /* The_Amazing_Juggler */,
+				2EA436AA1D00BBE1007EEFB1 /* The_Amazing_JugglerTests */,
+				2EA436B51D00BBE1007EEFB1 /* The_Amazing_JugglerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2EC8B0551BDEBFF700BF4AC5 /* Resources */ = {
+		2EA436951D00BBE1007EEFB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC8B06A1BDEBFF700BF4AC5 /* LaunchScreen.storyboard in Resources */,
-				2EC8B0671BDEBFF700BF4AC5 /* Assets.xcassets in Resources */,
-				2EC8B0E41BDEC4E100BF4AC5 /* MainViewController.xib in Resources */,
+				2EA436D11D00BC59007EEFB1 /* GameViewController.xib in Resources */,
+				2EA436A51D00BBE1007EEFB1 /* LaunchScreen.storyboard in Resources */,
+				2EA436CB1D00BC40007EEFB1 /* MenuViewController.xib in Resources */,
+				2EA436A21D00BBE1007EEFB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EC8B06E1BDEBFF800BF4AC5 /* Resources */ = {
+		2EA436A91D00BBE1007EEFB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EC8B0791BDEBFF800BF4AC5 /* Resources */ = {
+		2EA436B41D00BBE1007EEFB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,53 +345,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2EC8B0531BDEBFF700BF4AC5 /* Sources */ = {
+		2EA436931D00BBE1007EEFB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC8B05F1BDEBFF700BF4AC5 /* AppDelegate.m in Sources */,
-				2EC8B0E91BDEC53800BF4AC5 /* MainScene.m in Sources */,
-				2EC8B0E31BDEC4E100BF4AC5 /* MainViewController.m in Sources */,
-				2EC8B05C1BDEBFF700BF4AC5 /* main.m in Sources */,
+				2EA436E01D00C4A7007EEFB1 /* GameScene+UITouch.swift in Sources */,
+				2EA436DA1D00BDD6007EEFB1 /* GameViewController+SKScene.swift in Sources */,
+				2EA436EA1D00D3F4007EEFB1 /* GameViewController+GameScene.swift in Sources */,
+				2EA436DC1D00BFF7007EEFB1 /* GameScene+SKNode.swift in Sources */,
+				2EA4369B1D00BBE1007EEFB1 /* AppDelegate.swift in Sources */,
+				2EA436D01D00BC59007EEFB1 /* GameViewController.swift in Sources */,
+				2EA436D81D00BD14007EEFB1 /* MenuViewController+UITouch.swift in Sources */,
+				2EA436D41D00BC8D007EEFB1 /* GameScene.swift in Sources */,
+				2EA436E41D00C77B007EEFB1 /* EasyTimerTimeInterval.swift in Sources */,
+				2EA436DE1D00C056007EEFB1 /* PlayerNode.swift in Sources */,
+				2EA436CA1D00BC40007EEFB1 /* MenuViewController.swift in Sources */,
+				2EA436E81D00CBD8007EEFB1 /* GameScene+SKPhysicsContact.swift in Sources */,
+				2EA436E31D00C77B007EEFB1 /* EasyTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EC8B06C1BDEBFF800BF4AC5 /* Sources */ = {
+		2EA436A71D00BBE1007EEFB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC8B0751BDEBFF800BF4AC5 /* The_Amazing_JugglerTests.m in Sources */,
+				2EA436B01D00BBE1007EEFB1 /* The_Amazing_JugglerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EC8B0771BDEBFF800BF4AC5 /* Sources */ = {
+		2EA436B21D00BBE1007EEFB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC8B0801BDEBFF800BF4AC5 /* The_Amazing_JugglerUITests.m in Sources */,
+				2EA436BB1D00BBE1007EEFB1 /* The_Amazing_JugglerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2EC8B0721BDEBFF800BF4AC5 /* PBXTargetDependency */ = {
+		2EA436AD1D00BBE1007EEFB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2EC8B0561BDEBFF700BF4AC5 /* The_Amazing_Juggler */;
-			targetProxy = 2EC8B0711BDEBFF800BF4AC5 /* PBXContainerItemProxy */;
+			target = 2EA436961D00BBE1007EEFB1 /* The_Amazing_Juggler */;
+			targetProxy = 2EA436AC1D00BBE1007EEFB1 /* PBXContainerItemProxy */;
 		};
-		2EC8B07D1BDEBFF800BF4AC5 /* PBXTargetDependency */ = {
+		2EA436B81D00BBE1007EEFB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2EC8B0561BDEBFF700BF4AC5 /* The_Amazing_Juggler */;
-			targetProxy = 2EC8B07C1BDEBFF800BF4AC5 /* PBXContainerItemProxy */;
+			target = 2EA436961D00BBE1007EEFB1 /* The_Amazing_Juggler */;
+			targetProxy = 2EA436B71D00BBE1007EEFB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2EC8B0681BDEBFF700BF4AC5 /* LaunchScreen.storyboard */ = {
+		2EA436A31D00BBE1007EEFB1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2EC8B0691BDEBFF700BF4AC5 /* Base */,
+				2EA436A41D00BBE1007EEFB1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -333,10 +408,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2EC8B0821BDEBFF800BF4AC5 /* Debug */ = {
+		2EA436BD1D00BBE1007EEFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -369,18 +445,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2EC8B0831BDEBFF800BF4AC5 /* Release */ = {
+		2EA436BE1D00BBE1007EEFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -407,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,118 +493,116 @@
 			};
 			name = Release;
 		};
-		2EC8B0851BDEBFF800BF4AC5 /* Debug */ = {
+		2EA436C01D00BBE1007EEFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = The_Amazing_Juggler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silentdoorhinges.The-Amazing-Juggler";
+				PRODUCT_BUNDLE_IDENTIFIER = "silentdoorhinges.The-Amazing-Juggler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		2EC8B0861BDEBFF800BF4AC5 /* Release */ = {
+		2EA436C11D00BBE1007EEFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = The_Amazing_Juggler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silentdoorhinges.The-Amazing-Juggler";
+				PRODUCT_BUNDLE_IDENTIFIER = "silentdoorhinges.The-Amazing-Juggler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		2EC8B0881BDEBFF800BF4AC5 /* Debug */ = {
+		2EA436C31D00BBE1007EEFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = The_Amazing_JugglerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silentdoorhinges.The-Amazing-JugglerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "silentdoorhinges.The-Amazing-JugglerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The_Amazing_Juggler.app/The_Amazing_Juggler";
 			};
 			name = Debug;
 		};
-		2EC8B0891BDEBFF800BF4AC5 /* Release */ = {
+		2EA436C41D00BBE1007EEFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = The_Amazing_JugglerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silentdoorhinges.The-Amazing-JugglerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "silentdoorhinges.The-Amazing-JugglerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The_Amazing_Juggler.app/The_Amazing_Juggler";
 			};
 			name = Release;
 		};
-		2EC8B08B1BDEBFF800BF4AC5 /* Debug */ = {
+		2EA436C61D00BBE1007EEFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = The_Amazing_JugglerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silentdoorhinges.The-Amazing-JugglerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "silentdoorhinges.The-Amazing-JugglerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = The_Amazing_Juggler;
-				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		2EC8B08C1BDEBFF800BF4AC5 /* Release */ = {
+		2EA436C71D00BBE1007EEFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = The_Amazing_JugglerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silentdoorhinges.The-Amazing-JugglerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "silentdoorhinges.The-Amazing-JugglerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = The_Amazing_Juggler;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2EC8B0521BDEBFF700BF4AC5 /* Build configuration list for PBXProject "The_Amazing_Juggler" */ = {
+		2EA436921D00BBE1007EEFB1 /* Build configuration list for PBXProject "The_Amazing_Juggler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EC8B0821BDEBFF800BF4AC5 /* Debug */,
-				2EC8B0831BDEBFF800BF4AC5 /* Release */,
+				2EA436BD1D00BBE1007EEFB1 /* Debug */,
+				2EA436BE1D00BBE1007EEFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EC8B0841BDEBFF800BF4AC5 /* Build configuration list for PBXNativeTarget "The_Amazing_Juggler" */ = {
+		2EA436BF1D00BBE1007EEFB1 /* Build configuration list for PBXNativeTarget "The_Amazing_Juggler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EC8B0851BDEBFF800BF4AC5 /* Debug */,
-				2EC8B0861BDEBFF800BF4AC5 /* Release */,
+				2EA436C01D00BBE1007EEFB1 /* Debug */,
+				2EA436C11D00BBE1007EEFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EC8B0871BDEBFF800BF4AC5 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerTests" */ = {
+		2EA436C21D00BBE1007EEFB1 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EC8B0881BDEBFF800BF4AC5 /* Debug */,
-				2EC8B0891BDEBFF800BF4AC5 /* Release */,
+				2EA436C31D00BBE1007EEFB1 /* Debug */,
+				2EA436C41D00BBE1007EEFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EC8B08A1BDEBFF800BF4AC5 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerUITests" */ = {
+		2EA436C51D00BBE1007EEFB1 /* Build configuration list for PBXNativeTarget "The_Amazing_JugglerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EC8B08B1BDEBFF800BF4AC5 /* Debug */,
-				2EC8B08C1BDEBFF800BF4AC5 /* Release */,
+				2EA436C61D00BBE1007EEFB1 /* Debug */,
+				2EA436C71D00BBE1007EEFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2EC8B04F1BDEBFF700BF4AC5 /* Project object */;
+	rootObject = 2EA4368F1D00BBE1007EEFB1 /* Project object */;
 }
