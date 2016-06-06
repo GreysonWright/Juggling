@@ -29,7 +29,7 @@ extension GameViewController {
 			NSUserDefaults.standardUserDefaults().synchronize()
 		}
 		
-		2.second.delay {
+		delayTimer = 2.second.delay {
 			let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 			let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
 			appDelegate.window?.rootViewController = menuViewController
@@ -37,11 +37,11 @@ extension GameViewController {
 	}
 	
 	func updateCrowdSatisfaction(value: Int) {
-		if value < 25 {
+		if value <= 25 {
 			crowdStatusImageView.backgroundColor = UIColor.redColor()
-		} else if value < 50 {
+		} else if value <= 50 {
 			self.crowdStatusImageView.backgroundColor = UIColor.orangeColor()
-		} else if value < 75 {
+		} else if value <= 75 {
 			self.crowdStatusImageView.backgroundColor = UIColor.yellowColor()
 		} else if value > 75 {
 			self.crowdStatusImageView.backgroundColor = UIColor.greenColor()

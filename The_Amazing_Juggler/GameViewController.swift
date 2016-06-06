@@ -14,6 +14,7 @@ class GameViewController: UIViewController, GameSceneDelegate {
 	
 	weak var gameScene: GameScene?
 	weak var gameView: SKView?
+	weak var delayTimer: NSTimer?
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,4 +26,10 @@ class GameViewController: UIViewController, GameSceneDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	deinit {
+		delayTimer?.stop()
+		delayTimer = nil
+		print("Deinit GameViewController")
+	}
 }

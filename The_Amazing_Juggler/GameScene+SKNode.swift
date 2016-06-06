@@ -15,7 +15,7 @@ extension GameScene {
 	}
 	
 	func createGround() {
-		let groundNode = SKShapeNode(rectOfSize: CGSize(width: size.width, height: 40))
+		let groundNode = SKShapeNode(rectOfSize: CGSize(width: size.width, height: 160))
 		groundNode.name = "Ground"
 		groundNode.fillColor = UIColor.blackColor()
 		groundNode.strokeColor = groundNode.fillColor
@@ -29,7 +29,7 @@ extension GameScene {
 	func createPlayer() {
 		let playerNode = PlayerNode()
 		playerNode.name = "Player"
-		playerNode.position = CGPoint(x: CGRectGetMidX(frame), y: CGRectGetMinY(frame) + 36)
+		playerNode.position = CGPoint(x: CGRectGetMidX(frame), y: CGRectGetMinY(frame) + 96)
 		player = playerNode
 		addChild(player!)
 	}
@@ -39,7 +39,7 @@ extension GameScene {
 		ball.name = "Ball"
 		ball.fillColor = UIColor.blueColor()
 		ball.strokeColor = ball.fillColor
-		ball.position = player!.position
+		ball.position = CGPoint(x: player!.position.x, y: player!.position.y + 21)
 		ball.physicsBody = SKPhysicsBody(circleOfRadius: 5)
 		ball.physicsBody!.contactTestBitMask = 2
 		ball.physicsBody!.collisionBitMask = 0
@@ -55,8 +55,9 @@ extension GameScene {
 				self?.createBall()
 				self?.crowdSatisfaction = min(self!.crowdSatisfaction + 8, 100);
 			}
+			
 			if self?.score != 0 {
-				self?.score += 3
+				self?.score += 1
 				self?.scoreLabel?.text = "Score: \(self!.score)"
 			}
 		}
@@ -77,12 +78,16 @@ extension GameScene {
 		addChild(scoreLabel!)
 	}
 	
-	func setupScene() {
+	func configureWorld() {
 		physicsWorld.contactDelegate = self
 		physicsWorld.gravity = CGVector(dx: 0, dy: -3)
 		physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
 		physicsBody!.contactTestBitMask = 4;
 		physicsBody!.collisionBitMask = 1;
+	}
+	
+	func setupScene() {
+		configureWorld()
 		createScoreLabel()
 		createGround()
 		createPlayer()

@@ -17,7 +17,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 	var score = 0
 	var ballCount = 0
 	var crowdSatisfaction = 30
-	var ignoreContact = true
 	weak var scoreLabel: SKLabelNode?
 	weak var player: PlayerNode?
 	weak var ballTimer: NSTimer?

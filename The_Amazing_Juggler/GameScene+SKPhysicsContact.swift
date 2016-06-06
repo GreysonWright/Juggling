@@ -15,17 +15,15 @@ extension GameScene {
 		} else if (contact.bodyA.contactTestBitMask == 1) {
 			contact.bodyB.applyImpulse(CGVectorMake(0.1 * randomNumber(-1.0, upperBound: 1.0), 3.5))
 			contact.bodyB.velocity = CGVector(dx: contact.bodyB.velocity.dx, dy: min(contact.bodyB.velocity.dy, 600));
-			if !ignoreContact {
-				score += 1
-				scoreLabel?.text = "Score \(score)"
-			}
-			ignoreContact = false
+			score += 1
+			scoreLabel?.text = "Score \(score)"
 		}
 		
-		if contact.contactPoint.y < CGRectGetMinY(frame) + 20 {
+		if contact.contactPoint.y < CGRectGetMinY(frame) + 40 {
 			contact.bodyB.node?.removeFromParent()
 			ballCount -= 1
-			crowdSatisfaction = max(crowdSatisfaction - 30, 0)
+			crowdSatisfaction = max(crowdSatisfaction - 25, 0)
+			gameDelegate?.updateCrowdSatisfaction(crowdSatisfaction)
 		}
 	}
 }
