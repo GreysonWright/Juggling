@@ -13,7 +13,8 @@ extension GameScene {
 		for touch in touches {
 			let touchLocation = touch.locationInNode(self)
 			if let player = player {
-				player.move(CGPoint(x: touchLocation.x, y: player.position.y))
+				let boundedLocationX = max(CGRectGetMinX(frame) + player.size.width / 2, min(touchLocation.x, CGRectGetMaxX(frame) - player.size.width / 2))
+				player.move(CGPoint(x: boundedLocationX, y: player.position.y))
 			}
 		}
 	}

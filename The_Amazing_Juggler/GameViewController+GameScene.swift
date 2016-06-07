@@ -14,7 +14,7 @@ extension GameViewController {
 		gameScene?.removeAllActions()
 		gameScene?.removeAllChildren()
 		gameScene = nil
-		
+
 		let gameOverLabel = UILabel(frame: UIScreen.mainScreen().bounds)
 		gameOverLabel.numberOfLines = 0
 		gameOverLabel.textAlignment = .Center

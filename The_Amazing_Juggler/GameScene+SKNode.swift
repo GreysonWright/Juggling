@@ -53,7 +53,7 @@ extension GameScene {
 		ballTimer = 5.second.interval { [weak self] in
 			if self?.ballCount < 7 {
 				self?.createBall()
-				self?.crowdSatisfaction = min(self!.crowdSatisfaction + 8, 100);
+				self?.crowdSatisfaction = min(self!.crowdSatisfaction + 8, 100)
 			}
 			
 			if self?.score != 0 {
@@ -62,7 +62,7 @@ extension GameScene {
 			}
 		}
 		satisfactionTimer =  1.second.interval { [weak self] in
-			self?.crowdSatisfaction = min(self!.crowdSatisfaction + 1, 100);
+			self?.crowdSatisfaction = min(self!.crowdSatisfaction + 1, 100)
 			self?.gameDelegate?.updateCrowdSatisfaction(self!.crowdSatisfaction)
 		}
 	}
@@ -82,8 +82,8 @@ extension GameScene {
 		physicsWorld.contactDelegate = self
 		physicsWorld.gravity = CGVector(dx: 0, dy: -3)
 		physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
-		physicsBody!.contactTestBitMask = 4;
-		physicsBody!.collisionBitMask = 1;
+		physicsBody!.contactTestBitMask = 4
+		physicsBody!.collisionBitMask = 1
 	}
 	
 	func setupScene() {
